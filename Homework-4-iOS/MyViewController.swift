@@ -13,7 +13,7 @@ class MyViewController: UIViewController {
     
     @IBOutlet weak var changeLabel: UILabel!
     @IBAction func changeButton(_ sender: UIButton) {
-        changeLabel.text = "new text"
+        print("OK")
     }
     
     override func viewDidLoad() {
