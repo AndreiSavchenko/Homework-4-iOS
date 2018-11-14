@@ -29,6 +29,11 @@ class MyViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var textFieldLabel: UILabel!
+    @IBAction func textFieldTextField(_ sender: UITextField) {
+        textFieldLabel.text = sender.text
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
