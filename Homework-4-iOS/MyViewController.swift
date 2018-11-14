@@ -34,6 +34,12 @@ class MyViewController: UIViewController {
         textFieldLabel.text = sender.text
     }
     
+    @IBOutlet weak var slideLabel: UILabel!
+    @IBAction func slideSlider(_ sender: UISlider) {
+        slideLabel.text = String(Int(sender.value))
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

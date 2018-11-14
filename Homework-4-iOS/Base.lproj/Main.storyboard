@@ -61,6 +61,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-vN-MuC">
+                                <rect key="frame" x="29" y="179" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slideSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rp7-OV-o8Z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO8-2L-Zad">
+                                <rect key="frame" x="208" y="183" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Привет!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-EU-NQC">
                                 <rect key="frame" x="208" y="63" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,6 +89,7 @@
                     <connections>
                         <outlet property="changeTextLabel" destination="Pvl-EU-NQC" id="lLG-ky-Ib5"/>
                         <outlet property="oneTwoLabel" destination="mTm-fk-nxy" id="9Cw-hw-MKB"/>
+                        <outlet property="slideLabel" destination="hO8-2L-Zad" id="p1o-4A-q5U"/>
                         <outlet property="textFieldLabel" destination="8tX-7M-PqR" id="hag-Vl-Vjj"/>
                     </connections>
                 </viewController>
