@@ -39,6 +39,33 @@ class MyViewController: UIViewController {
         slideLabel.text = String(Int(sender.value))
     }
     
+    @IBAction func switchSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            view.backgroundColor = .white
+        } else {
+            view.backgroundColor = .gray
+        }
+    }
+    
+    @IBOutlet weak var progressActivityIndicatorView: UIActivityIndicatorView!
+    @IBAction func progressButton(_ sender: UIButton) {
+        progressActivityIndicatorView.startAnimating()
+    }
+    @IBAction func progressUpButton(_ sender: UIButton) {
+        progressActivityIndicatorView.stopAnimating()
+    }
+    
+    @IBOutlet weak var plusMinusLabel: UILabel!
+    @IBAction func plusMinusStepper(_ sender: UIStepper) {
+        plusMinusLabel.text = String(sender.value)
+    }
+    
+    @IBOutlet weak var funImageView: UIImageView!
+    @IBAction func imageButton(_ sender: UIButton) {
+        funImageView.image = UIImage(named: "funimage")
+    }
+    
+    
     
     
     override func viewDidLoad() {
