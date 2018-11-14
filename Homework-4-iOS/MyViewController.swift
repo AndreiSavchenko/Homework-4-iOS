@@ -43,7 +43,7 @@ class MyViewController: UIViewController {
         if sender.isOn {
             view.backgroundColor = .white
         } else {
-            view.backgroundColor = .gray
+            view.backgroundColor = .lightGray
         }
     }
     
@@ -65,12 +65,7 @@ class MyViewController: UIViewController {
         funImageView.image = UIImage(named: "funimage")
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
 }
