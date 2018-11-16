@@ -10,7 +10,14 @@ import UIKit
 
 class MyViewController: UIViewController {
     @IBOutlet weak var changeTextLabel: UILabel!
-    @IBAction func buttonChangeButton(_ sender: UIButton) {
+    @IBOutlet weak var oneTwoLabel: UILabel!
+    @IBOutlet weak var currTextLabel: UILabel!
+    @IBOutlet weak var valueSlideLabel: UILabel!
+    @IBOutlet weak var progressActivityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var plusMinusLabel: UILabel!
+    @IBOutlet weak var funImageView: UIImageView!
+    
+    @IBAction func changeTextButton(_ sender: UIButton) {
         if changeTextLabel.text! == "Привет!" {
             changeTextLabel.textColor = .red
             changeTextLabel.text = "Hello!"
@@ -20,7 +27,6 @@ class MyViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var oneTwoLabel: UILabel!
     @IBAction func oneTwoSegmentedControl(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             oneTwoLabel.text = "1"
@@ -29,17 +35,15 @@ class MyViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var textFieldLabel: UILabel!
-    @IBAction func textFieldTextField(_ sender: UITextField) {
-        textFieldLabel.text = sender.text
+    @IBAction func currTextTextField(_ sender: UITextField) {
+        currTextLabel.text = sender.text
     }
     
-    @IBOutlet weak var slideLabel: UILabel!
-    @IBAction func slideSlider(_ sender: UISlider) {
-        slideLabel.text = String(Int(sender.value))
+    @IBAction func changeSlider(_ sender: UISlider) {
+        valueSlideLabel.text = String(Int(sender.value))
     }
     
-    @IBAction func switchSwitch(_ sender: UISwitch) {
+    @IBAction func changeSwitch(_ sender: UISwitch) {
         if sender.isOn {
             view.backgroundColor = .white
         } else {
@@ -47,7 +51,6 @@ class MyViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var progressActivityIndicatorView: UIActivityIndicatorView!
     @IBAction func progressButton(_ sender: UIButton) {
         progressActivityIndicatorView.startAnimating()
     }
@@ -55,13 +58,11 @@ class MyViewController: UIViewController {
         progressActivityIndicatorView.stopAnimating()
     }
     
-    @IBOutlet weak var plusMinusLabel: UILabel!
     @IBAction func plusMinusStepper(_ sender: UIStepper) {
         plusMinusLabel.text = String(sender.value)
     }
     
-    @IBOutlet weak var funImageView: UIImageView!
-    @IBAction func imageButton(_ sender: UIButton) {
+    @IBAction func addImageButton(_ sender: UIButton) {
         funImageView.image = UIImage(named: "funimage")
     }
     
