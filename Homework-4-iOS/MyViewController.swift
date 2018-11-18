@@ -65,8 +65,4 @@ class MyViewController: UIViewController {
     @IBAction func addImageButton(_ sender: UIButton) {
         funImageView.image = UIImage(named: "funimage")
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
